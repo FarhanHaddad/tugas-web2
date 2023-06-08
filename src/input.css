@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .side-bar {
+    @apply px-4 py-2 hover:border-b-2 hover:border-sky-500 transition duration-500;
+  }
+
+  .side-style {
+    @apply font-semibold text-base focus:text-baru hover:text-baru text-kedua;
+  }
+
+  .tombol-submit {
+    @apply py-2 px-4 text-white font-bold rounded-md shadow-md shadow-keempat bg-blue-400 hover:bg-biru focus:bg-biru focus:ring active:ring-ketiga
+        hover:text-keempat hover:shadow-red-600 transition duration-500;
+  }
+
+  .tombol-edit {
+    @apply py-1 px-3 text-white text-sm font-medium rounded-md shadow-md shadow-keempat bg-blue-400 hover:bg-biru focus:bg-biru focus:ring active:ring-ketiga
+        hover:text-keempat hover:shadow-kedua transition duration-500;
+  }
+
+  .tombol-hapus {
+    @apply py-1 px-3 text-white text-sm font-medium rounded-md shadow-md shadow-keempat bg-blue-400 hover:bg-red-700 focus:bg-red-700 focus:ring active:ring-ketiga
+       hover:shadow-red-700 transition duration-500;
+  }
+
+  .label-form {
+    @apply block text-ketiga text-base font-bold mb-2;
+  }
+
+  .kolom-input {
+    @apply px-3 py-2 border shadow-md rounded-md w-full appearance-none leading-tight placeholder:text-slate-400
+                focus:outline-none focus:ring-1
+                focus:ring-biru focus:border-biru;
+    /* invalid:text-pink-700
+                invalid:focus:ring-pink-700
+                invalid:focus:border-pink-700; */
+  }
+
+  .tabel-judul {
+    @apply py-2 px-2 border border-slate-400 text-left bg-slate-600 text-white;
+  }
+
+  .tabel-isi {
+    @apply py-3 px-2 border border-slate-400 font-sans text-base text-slate-600;
+  }
+}
